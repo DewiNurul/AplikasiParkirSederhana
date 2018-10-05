@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="459.0" prefWidth="368.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="program.parkir.sederhana.FXMLDocumentController">
+    <children>
+        <Label id="programkasirsederhana" fx:id="labelprogramparkirsederhana" layoutX="37.0" layoutY="21.0" minHeight="16" minWidth="69" text="Program Parkir Sederhana" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="24.0" />
+         </font></Label>
+      <Label id="Nokendaraan" fx:id="labelnokendaraan" layoutX="34.0" layoutY="86.0" prefHeight="20.0" prefWidth="137.0" text="No. Kendaraan" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label id="jeniskendaraan" fx:id="labeljeniskendaraan" layoutX="37.0" layoutY="126.0" text="Jenis Kendaraan" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label id="hargaparkir" fx:id="labelhargaparkir" layoutX="34.0" layoutY="159.0" text="Harga Parkir" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label id="jammasuk" fx:id="labeljammasuk" layoutX="37.0" layoutY="214.0" text="Jam Masuk" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label id="lamaparkir" fx:id="labellamaparkir" layoutX="37.0" layoutY="255.0" text="Lama Parkir" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField id="nokendaraan" fx:id="textfieldNoKendaraan" layoutX="166.0" layoutY="84.0" onAction="#nokendaraan" prefHeight="8.0" prefWidth="149.0" />
+      <TextField id="hargaparkir" fx:id="textfieldHargaParkir" layoutX="167.0" layoutY="167.0" onAction="#hargaparkir" />
+      <TextField id="jammasuk" fx:id="textfieldJamMasuk" layoutX="166.0" layoutY="212.0" onAction="#jammasuk" />
+      <TextField id="lamaparkir" fx:id="textfieldLamaParkir" layoutX="166.0" layoutY="252.0" onAction="#lamaparkir" prefHeight="25.0" prefWidth="93.0" />
+      <RadioButton id="motor" fx:id="radiobuttonMotor" layoutX="173.0" layoutY="128.0" mnemonicParsing="false" onAction="#motor" text="Motor" textFill="WHITE" />
+      <RadioButton id="mobil" fx:id="radiobuttonMobil" layoutX="241.0" layoutY="128.0" mnemonicParsing="false" onAction="#mobil" text="Mobil" textFill="WHITE" />
+      <Button id="ok" fx:id="buttonOK" layoutX="168.0" layoutY="283.0" mnemonicParsing="false" onAction="#ok" text="OK" />
+      <Label id="menit" fx:id="labelmenit" layoutX="279.0" layoutY="256.0" text="Menit" textFill="WHITE" />
+      <TextArea fx:id="textfieldCetak" layoutX="34.0" layoutY="319.0" prefHeight="124.0" prefWidth="315.0" style="-fx-background-color: grey;" />
+    </children>
+</AnchorPane>
